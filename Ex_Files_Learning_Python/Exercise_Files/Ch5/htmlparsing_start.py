@@ -1,0 +1,55 @@
+# 
+# Example file for parsing and processing HTML
+#
+from html.parser import HTMLParser
+from pathlib import Path
+
+metacount = 0
+
+#sub class of HTMLParser
+class MyHTMLParser(HTMLParser): #overriding methods
+  def handle_comment(self, data):
+    print("Encountered comment: ", data)
+    pos = self.getpos()
+    print("\tAt line: ", pos[0], " position ", pos[1])
+
+  def handle_starttag(self, tag, attrs):
+    global metacount
+    if tag == 'meta':
+      metacount += 1
+    print("Encountered starttag: ", tag)
+    pos = self.getpos()
+    print("\tAt line: ", pos[0], " position ", pos[1])
+
+    if attrs.__len__() > 0:
+      print("\tAttributes: ")
+      for a in attrs:
+        print("\t", a[0], "=", a[1])
+
+  def handle_endtag(self, tag):
+    print("Encountered endtag: ", tag)
+    pos = self.getpos()
+    print("\tAt line: ", pos[0], " position ", pos[1])
+  
+  def handle_data(self, data):
+    if (data.isspace()):
+      return
+    print("Encounterd data: ", data)
+    pos = self.getpos()
+    print("\tAt line: ", pos[0], " position ", pos[1])
+
+def main():
+  # instantiate the parser and feed it some HTML
+  parser = MyHTMLParser()
+
+  f = open("Ex_Files_Learning_Python/Exercise_Files/Ch5/samplehtml.html")
+
+  if f.mode == 'r':
+    contents = f.read()
+    parser.feed(contents)
+
+  print("Metatags: ", metacount)
+
+if __name__ == "__main__":
+  main()
+  
