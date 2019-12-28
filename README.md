@@ -12,7 +12,7 @@ Chapter 7: Functions (notes end here)
 Chapter 8: Structrued Data  
 Chapter 9: Classes  
 Chapter 10: Exceptions  
-Chapter 11: String Objects
+Chapter 11: String Objects  
 Chapter 12: File I/O  
 Chapter 13: Built-in Functions  
 Chapter 14: Modules  
