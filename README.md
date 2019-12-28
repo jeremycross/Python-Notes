@@ -1,8 +1,8 @@
 # Python-Notes
 A collection of my notes from learning python
 For the most useful beginning notes under 'Ex_Files_Python_EssT/Exercise Files'
-Chapter breakdown for that folder (notes updated to Chapter 7):
-
+Chapter breakdown for that folder (notes updated to Chapter 7):  
+  
 Chapter 2: Language Overview
 Chapter 3: Types and Values
 Chapter 4: Condtitionals
