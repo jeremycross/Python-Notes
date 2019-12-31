@@ -9,7 +9,7 @@ Chapter 4: Condtitionals
 Chapter 5: Operators  
 Chapter 6: Loops  
 Chapter 7: Functions (notes end here)  
-Chapter 8: Structrued Data  
+Chapter 8: Structured Data  
 Chapter 9: Classes  
 Chapter 10: Exceptions  
 Chapter 11: String Objects  
