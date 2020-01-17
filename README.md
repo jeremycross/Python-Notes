@@ -24,7 +24,7 @@ Chapter 15: Databases
 When working with the 'Learning_Python_JoeMarini' notes there are two types of files to keep in mind:  
 'starting' and 'finished'  
  - 'starting' files are my own notes and were created while following the online tutorial  
- - 'finished' files are the instructors programs and were left untouched  
+ - 'finished' files are the instructors programs and were left untouched    
 Chapter breakdown for that folder is (all notes are updated):  
   
 Chapter 2: Python basics  
